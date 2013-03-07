@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script>
+	var socket = io.connect('http://localhost:3000');
+	 socket.send(window.location);
+	socket.on('connect', function () {
+	socket.on('pageview', function (msg) {
+	$('#pageViews').append('<li>' + msg.url + '</li>');
+	});
+	});
+	</script>
+</head>
+<body>
+	<h1>Simple Page</h1>
+	<ul id="pageViews"></ul>
+</body>
+</html>
