@@ -25,7 +25,7 @@ callback(null, true);
 // Sessions without express
 http://stackoverflow.com/questions/12122783/socket-io-session-without-express-js
 http://stackoverflow.com/questions/10609564/socketio-mysql-authentication/10622204#10622204
-
+http://stackoverflow.com/questions/8993369/using-socket-io-how-can-i-find-out-the-session-id-of-a-disconnected-user
 
 // Node Modules
 http://www.catonmat.net/blog/nodejs-modules-cradle/
